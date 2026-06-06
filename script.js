@@ -93,7 +93,7 @@ function loadQuestion(){
     const q = questions[currentQuestion];
 
     counterEl.textContent =
-    Pregunta ${currentQuestion+1}/${questions.length};
+    `Pregunta ${currentQuestion+1}/${questions.length}`;
 
     questionEl.textContent = q.question;
 
@@ -161,7 +161,7 @@ function selectAnswer(index){
         score += 100;
 
         scoreEl.textContent =
-        Puntos: ${score};
+        `Puntos: ${score}`;
     }
 
     setTimeout(nextQuestion,1500);
@@ -189,5 +189,5 @@ function finishGame(){
     resultScreen.classList.remove("hidden");
 
     finalScoreEl.textContent =
-    Tu puntuación final fue: ${score} puntos;
+    `Tu puntuación final fue: ${score} puntos`;
 }
